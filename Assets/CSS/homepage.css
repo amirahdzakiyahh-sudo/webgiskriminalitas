@@ -1,0 +1,76 @@
+/* Assets/css/homepage.css */
+
+
+*{ margin:0; padding:0; box-sizing:border-box; font-family:Arial,sans-serif; }
+body{ background:#d3051344; min-height:100vh; overflow-x:hidden; }
+
+/* Navbar */
+.navbar{ display:flex; justify-content:space-between; align-items:center; padding:25px 45px; }
+.logo{ font-size:34px; font-weight:bold; color:#8b1e1e; letter-spacing:3px; }
+.menu{ display:flex; gap:35px; }
+.menu a{ text-decoration:none; color:#8b1e1e; font-size:15px; border-top:1px solid #8b1e1e; border-bottom:1px solid #8b1e1e; padding:12px 45px; transition:0.3s; }
+.menu a:hover{ background:#8b1e1e; color:#efe5cc; }
+.login-btn{ background:#efe5cc; color:#8b1e1e; border:none; padding:16px 48px; border-radius:40px; font-size:25px; font-family:"Times New Roman", serif; font-style:italic; cursor:pointer; }
+
+/* Hero */
+.hero{ position:relative; width:90%; height:540px; margin:20px auto; background:#eeb1b4b2; border-radius:35px; overflow:hidden; border:4px solid #c43d55; box-shadow:0 8px 25px rgba(0,0,0,0.25); }
+.top-cloud,.bottom-cloud{ position:absolute; left:0; width:100%; height:70px; background:#c43d55; z-index:3; }
+.top-cloud{ top:0; border-radius:0 0 50% 50%; }
+.bottom-cloud{ bottom:0; border-radius:50% 50% 0 0; }
+.crime-board{ position:absolute; width:78%; height:330px; top:100px; left:50%; transform:translateX(-50%); border-radius:18px; overflow:hidden; border:5px solid #8b1e1e; box-shadow:0 10px 20px rgba(0,0,0,0.35); z-index:1; }
+.crime-board img{ width:100%; height:100%; object-fit:contain; filter:brightness(75%); }
+.title{ position:absolute; top:215px; left:50%; transform:translateX(-50%); width:100%; text-align:center; z-index:4; font-size:58px; font-weight:900; line-height:1; color:#efe5cc; -webkit-text-stroke:1px #8b1e1e; text-shadow:4px 4px #8b1e1e; }
+.note{ position:absolute; width:150px; height:110px; background:#efe5cc; color:#8b1e1e; padding:12px; font-weight:bold; border-radius:10px; box-shadow:4px 4px 0 #8b1e1e; z-index:2; }
+.note-left{ top:110px; left:55px; transform:rotate(-8deg); }
+.note-right{ top:105px; right:65px; transform:rotate(7deg); }
+.tape{ position:absolute; background:#efe5cc; color:#8b1e1e; font-weight:bold; padding:10px 25px; border:2px dashed #8b1e1e; z-index:5; transform:rotate(-12deg); }
+.tape-left{ bottom:95px; left:80px; }
+.tape-right{ bottom:100px; right:85px; transform:rotate(12deg); }
+.subtitle{ text-align:center; margin-top:50px; margin-bottom:30px; color:#8b1e1e; font-size:18px; font-weight:bold; letter-spacing:4px; }
+
+/* Ringkasan */
+.summary-section{ background:#f8b1b5; width:90%; margin:50px auto; padding:45px 35px; border-radius:30px; text-align:center; color:#8b1e1e; box-shadow:0 8px 20px rgba(0,0,0,0.18); }
+.summary-section h2{ font-size:32px; margin-bottom:18px; }
+.summary-section p{ max-width:850px; margin:0 auto 35px; font-size:17px; line-height:1.7; color:#5f1c1c; }
+.info-cards{ display:grid; grid-template-columns:repeat(3,1fr); gap:25px; }
+.info-card{ background:#efe5cc; padding:25px 20px; border-radius:18px; box-shadow:5px 5px 0 #8b1e1e; }
+.info-card h3{ margin-bottom:12px; font-size:20px; }
+.info-card p{ font-size:14px; margin:0; }
+
+/* Preview Map */
+.preview-map{
+    width:90%;
+    margin:50px auto;
+    text-align:center;
+    color:#8b1e1e;
+}
+.preview-map h2{
+    font-size:32px;
+    margin-bottom:25px;
+}
+
+/* Kotak peta */
+#preview-map{
+    width:100%;           /* lebar penuh container */
+    height:400px;         /* tinggi tetap supaya peta muncul */
+    border:5px solid #8b1e1e;
+    border-radius:25px;
+    margin-bottom:20px;
+}
+
+/* Tombol lihat peta */
+.map-btn{
+    display:inline-block;
+    background:#8b1e1e;
+    color:#efe5cc;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:12px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* Footer */
+.footer{ margin-top:60px; background:#8b1e1e; color:#efe5cc; display:flex; justify-content:space-between; align-items:center; padding:25px 40px; line-height:1.8; }
+.footer-text{ text-align:center; width:100%; }
+.footer-logo{ width:70px; height:85px; object-fit:contain; }
