@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Situs Grand Lieu</title>
+<link rel="stylesheet" href="../Assets/CSS/description.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <div class="logo-box">
+            <img src="../Assets/img/logo2.jpg" alt="Logo">
+            <div class="logo-text">ECRIME PRAB</div>
+        </div>
+        <div class="center-buttons-wrapper">
+            <div class="center-buttons">
+                <a href="homepage.html"><button>Home</button></a>
+                <a href="content.html"><button>Content</button></a>
+                <a href="mapping.html"><button>Mapping</button></a>
+            </div>
+        </div>
+        <a href="../Pages/homepage.html"><button class="exit-button">Exit</button></a>
+    </div>
+
+    <!-- Hero image -->
+    <div class="hero-image">
+        <img src="../Assets/img/desss.png" alt="Gambar Hero">
+    </div>
+
+    <!-- 4 tombol utama -->
+    <div class="main-buttons">
+        <button onclick="scrollToSection('section1')">Profil Kota</button>
+        <button onclick="scrollToSection('section1-table')">Data Prabumulih</button>
+        <button onclick="scrollToSection('faktor-kerawanan')">Faktor Penyebab</button>
+    </div>
+
+    <!-- Section 1: Deskripsi Kota -->
+    <section id="section1" class="info-section">
+        <div class="info-image">
+            <img src="../Assets/img/imageprabumulih.png" alt="Wilayah">
+        </div>
+        <div class="info-text">
+            <h2>Where is Kota Prabumulih?</h2>
+            <p>Kota Prabumulih terletak di Provinsi Sumatera Selatan, Indonesia, dengan koordinat 0°13'36″ LS dan 104°13'12″ BT. Kota ini berada di jalur strategis dekat Palembang, sehingga menjadi pusat industri, perdagangan, dan transportasi di wilayah sekitarnya. Secara administratif, Prabumulih terbagi menjadi 6 kecamatan, yaitu Prabumulih Timur, Prabumulih Barat, Prabumulih Selatan, Prabumulih Utara, Cambai, dan Rungkang. Setiap kecamatan memiliki karakteristik berbeda, mulai dari pusat pemerintahan, permukiman padat, hingga area perkebunan dan pertanian, yang semuanya memengaruhi distribusi aktivitas sosial dan ekonomi di kota ini.</p>
+            <p>Data terbaru menunjukkan bahwa Kota Prabumulih menempati urutan kedua tertinggi dalam kasus kriminalitas di Sumatera Selatan, menjadikan pemetaan aktivitas kriminal di tiap kecamatan sangat penting untuk pengawasan dan mitigasi risiko. Tingkat kriminalitas yang cukup tinggi ini menuntut koordinasi antara aparat keamanan, masyarakat, dan lembaga pemerintah untuk menerapkan strategi pencegahan yang efektif. Informasi geografis dan administratif yang lengkap, dikombinasikan dengan data kriminalitas, menjadi dasar bagi analisis risiko dan perencanaan keamanan kota secara menyeluruh.</p>
+        </div>
+    </section>
+
+    <!-- Tabel Kriminalitas Full Width -->
+    <section id="section1-table">
+        <h2>PERBANDINGAN KERAWANAN KRIMINALITAS PROV SUMATERA SELATAN</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Kabupaten/Kota</th>
+                        <th>Jumlah Kasus (2024)</th>
+                        <th>Luas Wilayah (Km²)</th>
+                        <th>Kasus Per Km²</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1.</td><td>Kota Palembang</td><td>5.926</td><td>352,52</td><td>16,8</td></tr>
+                    <tr><td>2.</td><td>Kab. Musi Banyuasin</td><td>1.108</td><td>14.550,79</td><td>0,07</td></tr>
+                    <tr><td>3.</td><td>Kab. Ogan Komering Ilir</td><td>1.031</td><td>17.075,71</td><td>0,06</td></tr>
+                    <tr><td>4.</td><td>Kab. Banyuasin</td><td>746</td><td>12.258,59</td><td>0,06</td></tr>
+                    <tr><td>5.</td><td>Kota Prabumulih</td><td>528</td><td>447,31</td><td>1,18</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+   <!-- Section Faktor Kerawanan (3 kolom) -->
+<section id="faktor-kerawanan">
+    <h2>Faktor Penyebab Kerawanan</h2>
+    <div class="kolom-container">
+        <div class="kolom">
+            <img src="../Assets/img/fsosial.png" alt="Faktor Sosial" class="faktor-img">
+            <h3>Faktor Sosial</h3>
+            <p>Kerawanan kriminalitas di Kota Prabumulih dipengaruhi oleh kondisi ekonomi yang menurun, rendahnya tingkat pendidikan, dan lingkungan sosial yang tidak sehat. Warga yang kesulitan memenuhi kebutuhan dasar cenderung terdorong mengambil jalan pintas melalui tindak kriminal. Pergaulan remaja yang kurang terkontrol, minimnya dukungan sosial, serta penyalahgunaan narkotika juga memperburuk situasi.</p>
+        </div>
+        <div class="kolom">
+            <img src="../Assets/img/fekonomi.png" alt="Faktor Ekonomi" class="faktor-img">
+            <h3>Faktor Ekonomi</h3>
+            <p>Lingkungan fisik yang terbatas keamanannya, minim pengawasan di rumah dan area publik, serta kekurangan lapangan pekerjaan menciptakan kondisi rawan. Warga yang kurang saling mendukung mempermudah berkembangnya perilaku kriminal, sementara jalur dan ruang publik yang mudah diakses meningkatkan risiko kejahatan.</p>
+        </div>
+        <div class="kolom">
+            <img src="../Assets/img/flingkungan.png" alt="Faktor Lingkungan" class="faktor-img">
+            <h3>Faktor Lingkungan</h3>
+            <p>Karakteristik ruang yang memudahkan pelaku, visibilitas rendah, dan jalur pelarian yang mudah menjadi pemicu kriminalitas. Penyalahgunaan obat terlarang dan aktivitas geng yang merekrut pemuda rentan turut mempertinggi tingkat kejahatan di kawasan perkotaan maupun pinggiran Prabumulih.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+  <footer>
+    <h3>E-CrimePrab</h3>
+    <p>© 2026 Amirah Dzakiyah<br>
+    Informasi ini ditujukan untuk edukasi dan kesadaran masyarakat Kota Prabumulih tentang kerawanan kriminalitas.</p>
+  </footer>
+
+</body>
+</html>
+
+    <script>
+        function scrollToSection(id) {
+            const el = document.getElementById(id);
+            el.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
